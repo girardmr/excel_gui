@@ -1,0 +1,14 @@
+function [x, y] = read_excel(fileName, xcol, ycol)
+
+fileName = 'test_1';
+
+a = xlsread(fileName);
+
+x = a(:,1);
+y = a(:,2);
+
+plot(x,y);
+
+
+end
+
